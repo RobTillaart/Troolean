@@ -1,17 +1,17 @@
 //
 //    FILE: Troolean.cpp
 //  AUTHOR: Rob Tillaart
-// VERSION: 0.1.1
-// PURPOSE: class for troolean math (true false unknown)
-//     URL:
+// VERSION: 0.1.2
+// PURPOSE: Arduino Library for a three state logic datatype supporting {true false unknown}
+//     URL: https://github.com/RobTillaart/Troolean
 //
 // HISTORY:
-// 0.1.0 initial version
-// 0.1.1 adjust (in)equality so that unknown == unknown
-//       although there could be arguments that unknown != unknown
-//       added isTrue(), isFalse(), isUnknown()
-//       first public release
-//
+// 0.1.0    2018-01-10 initial version
+// 0.1.1    2018-01-28 adjust (in)equality so that unknown == unknown
+//                     although there could be arguments that unknown != unknown
+//                     added isTrue(), isFalse(), isUnknown()
+//                     first public release
+// 0.1.2    2020-06-07 small refactor; updated keywords.txt; metadata
 
 #include "Troolean.h"
 
@@ -36,7 +36,6 @@ Troolean::Troolean(const Troolean &t)
 {
   _value = t._value;
 }
-
 
 // PRINTING
 size_t Troolean::printTo(Print& p) const
@@ -99,7 +98,6 @@ Troolean::operator bool() const
   return false;
 }
 
-
 // NEGATE
 // t -> f
 // f -> t
@@ -124,7 +122,6 @@ Troolean Troolean::operator && (const bool &b)
   if (_value == 0 || !b) return Troolean(0);
   if (_value == 1 && b) return Troolean(1);
   return Troolean(-1);
-
 }
 
 Troolean Troolean::operator || (const Troolean &t)
@@ -141,7 +138,4 @@ Troolean Troolean::operator || (const bool &b)
   return Troolean(-1);
 }
 
-
-
-
-// END OF FILE
+// -- END OF FILE --
