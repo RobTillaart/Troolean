@@ -1,7 +1,7 @@
 //
 //    FILE: Troolean.cpp
 //  AUTHOR: Rob Tillaart
-// VERSION: 0.1.2
+// VERSION: 0.1.3
 // PURPOSE: Arduino Library for a three state logic datatype supporting {true false unknown}
 //     URL: https://github.com/RobTillaart/Troolean
 //
@@ -12,6 +12,7 @@
 //                     added isTrue(), isFalse(), isUnknown()
 //                     first public release
 // 0.1.2    2020-06-07 small refactor; updated keywords.txt; metadata
+// 0.1.3    2020-06-19 fix library.json
 
 #include "Troolean.h"
 
