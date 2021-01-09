@@ -54,10 +54,12 @@ unittest(test_constructor)
   Troolean u(-1);
   Troolean v(u);
   
+  // should not use these
   assertFalse(f);
   assertTrue(t);
-  assertTrue(u);  // not so but ...
+  assertFalse(u);        // not so ...
 
+  // use these
   assertTrue(f.isFalse());
   assertTrue(t.isTrue());
   assertTrue(u.isUnknown());
