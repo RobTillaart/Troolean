@@ -54,15 +54,15 @@ unittest(test_constructor)
   Troolean u(-1);
   Troolean v(u);
   
-  assertFalse(f.bool());
-  assertTrue(t.bool());
-  assertFalse(f.bool());
-  assertFalse(f.bool());
-  
-  assertEqual(1, 1);
+  assertFalse(f);
+  assertTrue(t);
+  assertFalse(u);
+  assertFalse(v);
+
 }
 
-// TODO extend ...
+
+// TODO extend operators  comparison etc
 
 unittest_main()
 
