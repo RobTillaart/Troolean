@@ -56,8 +56,8 @@ unittest(test_constructor)
   
   assertFalse(f);
   assertTrue(t);
-  assertFalse(u);
-  assertFalse(v);
+  assertEqual(-1, u);
+  assertEqual(-1, v);
 
 }
 
