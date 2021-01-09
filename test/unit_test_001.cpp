@@ -57,7 +57,6 @@ unittest(test_constructor)
   // should not use these
   assertFalse(f);
   assertTrue(t);
-  assertFalse(u);        // not so ...
 
   // use these
   assertTrue(f.isFalse());
