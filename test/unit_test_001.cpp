@@ -56,8 +56,12 @@ unittest(test_constructor)
   
   assertFalse(f);
   assertTrue(t);
-  assertEqual(-1, u);
-  assertEqual(-1, v);
+  assertTrue(u);  // not so but ...
+
+  assertTrue(f.isFalse());
+  assertTrue(t.isTrue());
+  assertTrue(u.isUnknown());
+  assertTrue(v.isUnknown());
 
 }
 
