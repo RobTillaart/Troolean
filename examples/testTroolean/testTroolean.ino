@@ -27,9 +27,11 @@ void setup()
   testIS();
 }
 
+
 void loop()
 {
 }
+
 
 void testConstructor()
 {
@@ -48,6 +50,7 @@ void testConstructor()
   Serial.print('\t');
   Serial.println(v);
 }
+
 
 void testEquality()
 {
@@ -82,6 +85,7 @@ void testEquality()
   Serial.println(u == true);
 }
 
+
 void testInEquality()
 {
   Troolean f(false);
@@ -115,6 +119,7 @@ void testInEquality()
   Serial.println(u != true);
 }
 
+
 void testAssignment()
 {
   Troolean f(false);
@@ -132,6 +137,7 @@ void testAssignment()
   Serial.print('\t');
   Serial.println(u);
 }
+
 
 void testAND()
 {
@@ -185,6 +191,7 @@ void testAND()
   Serial.println(c);
 }
 
+
 void testOR()
 {
   Troolean a, b, c;
@@ -237,6 +244,7 @@ void testOR()
   Serial.println(c);
 }
 
+
 void testNOT()
 {
   Troolean a(false), b(true), c(unknown);
@@ -255,6 +263,7 @@ void testNOT()
   Serial.print('\t');
   Serial.println(!!c);
 }
+
 
 void testIF()
 {
@@ -343,6 +352,7 @@ void testIF()
   Serial.println();
 }
 
+
 void testIS()
 {
   Troolean f(false), t(true), u(unknown);
@@ -424,4 +434,7 @@ testIS
 0	0	1
 
 */
-// END OF FILE
+
+
+// -- END OF FILE --
+
