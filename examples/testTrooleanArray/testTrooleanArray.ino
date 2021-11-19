@@ -13,6 +13,7 @@
 Troolean arr[10];
 Troolean brr[5] = { true, false, unknown };
 
+
 void setup()
 {
   Serial.begin(115200);
@@ -50,11 +51,16 @@ void setup()
     Serial.print(brr[i]);
     Serial.print(" ");
   }
-  Serial.println();
+  Serial.println(); 
+
+  Serial.println("\ndone...");
 }
+
 
 void loop()
 {
 }
 
-// END OF FILE
+
+// -- END OF FILE --
+
