@@ -11,4 +11,8 @@ isUnknown	KEYWORD2
 
 
 # Constants (LITERAL1)
+TROOLEAN_LIB_VERSION	LITERAL1
+
 unknown	LITERAL1
+
+

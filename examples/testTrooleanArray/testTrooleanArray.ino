@@ -1,7 +1,6 @@
 //
 //    FILE: testTrooleanArray.ino
 //  AUTHOR: Rob Tillaart
-// VERSION: 0.1.1
 // PURPOSE: test for troolean (tri state) math library for Arduino
 //     URL: https://github.com/RobTillaart/Troolean
 

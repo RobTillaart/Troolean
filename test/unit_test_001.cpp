@@ -39,7 +39,9 @@
 
 unittest_setup()
 {
+  fprintf(stderr, "TROOLEAN_LIB_VERSION: %s\n", (char *) TROOLEAN_LIB_VERSION );
 }
+
 
 unittest_teardown()
 {
@@ -48,8 +50,6 @@ unittest_teardown()
 
 unittest(test_constructor)
 {
-  fprintf(stderr, "TROOLEAN_LIB_VERSION: %s\n", (char *) TROOLEAN_LIB_VERSION );
-
   Troolean f(false);
   Troolean t(true);
   Troolean u(-1);
