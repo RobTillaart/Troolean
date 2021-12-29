@@ -8,7 +8,7 @@
 
 # Troolean
 
-Arduino Library for a three state logic data type supporting {True False Unknown}
+Arduino Library for a three state logic data type supporting {True False Unknown}.
 
 
 ## Description
@@ -42,7 +42,8 @@ See examples
 
 ## Future
 
-- update docimentation
+- update documentation
+- add unit tests  (derive from test troolean.ino?)
 - add examples
 - 
 
